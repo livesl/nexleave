@@ -176,8 +176,8 @@ register.first as username,
 FROM
 `leave`
 INNER JOIN register ON `leave`.user_id = register.id
-HAVING
-register.`first` = '.$username.' ')->result();
+where
+register.`first` = "'.$username.'" order by leave.id desc ')->result();
 
         $data_arr = array();
         $i = 0;
