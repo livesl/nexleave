@@ -61,15 +61,18 @@ class leaveadd_ctrl extends CI_Controller {
 
 
         $data['message'] = 'Data Inserted Successfully';
+        $to = "dalbsranawaka@gmail.com";
+        $subject = "DoNotReply!";
+        $txt = "You have new request!go to www.nexleave.makemywedding.lk!";
+        $headers = "Approval of leave";
+
+        mail($to, $subject, $txt, $headers);
 
 //        echo site_url('welcome/applyleave');
 
         $this->load->view('templates/header_admin');
         $this->load->view('pages/admin', $data);
         $this->load->view('templates/footer');
-        
-        
-        
     }
 
 //        $this->load->database();

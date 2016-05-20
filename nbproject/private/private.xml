@@ -3,15 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/nexsoft/nexleave/application/controllers/login.php</file>
             <file>file:/C:/xampp/htdocs/nexsoft/nexleave/application/views/pages/viewMyLeave.php</file>
-            <file>file:/C:/xampp/htdocs/nexsoft/nexleave/application/views/pages/register.php</file>
             <file>file:/C:/xampp/htdocs/nexsoft/nexleave/application/controllers/Welcome.php</file>
-            <file>file:/C:/xampp/htdocs/nexsoft/nexleave/application/models/register_model.php</file>
-            <file>file:/C:/xampp/htdocs/nexsoft/nexleave/application/views/pages/admin.php</file>
-            <file>file:/C:/xampp/htdocs/nexsoft/nexleave/application/controllers/Register_ctrl.php</file>
-            <file>file:/C:/xampp/htdocs/nexsoft/nexleave/application/views/pages/viewapplyleave_1.php</file>
-            <file>file:/C:/xampp/htdocs/nexsoft/nexleave/application/views/pages/applyleave.php</file>
         </group>
     </open-files>
 </project-private>

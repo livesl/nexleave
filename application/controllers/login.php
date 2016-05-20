@@ -74,15 +74,13 @@ class login extends CI_Controller {
         $this->load->view('login_view');
     }
 
-    public function sendmail() {
-        // the message
-        $msg = "You have new request!";
+    public function sendmailtoworker() {
+        $to = "dalbsranawaka@gmail.com";
+        $subject = "DoNotReply!";
+        $txt = "You have new request!go to www.nexleave.makemywedding.lk!";
+        $headers = "Approval of leave";
 
-// use wordwrap() if lines are longer than 70 characters
-        $msg = wordwrap($msg, 70);
-
-// send email
-        mail("dalbsranawaka@gmail.com", "Approval of leave", $msg);
+        mail($to, $subject, $txt, $headers);
     }
 
     public function viewload() {

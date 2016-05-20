@@ -209,7 +209,7 @@
                 
                 $.ajax({
                     type: 'POST',
-                    url: "sendmail",
+                    url: "sendmailtoworker",
                     data: {},
                     success: function (data) {
                        //

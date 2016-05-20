@@ -74,7 +74,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="<?php echo site_url('welcome/applyleave'); ?>">Apply Leave</a></li>
                                     <li><a href="<?php echo site_url('welcome/register'); ?>">Register</a></li>
-                                      <li><a href="<?php echo site_url('welcome/viewMyleave'); ?>">My Leaves</a></li>
+                                    <li><a href="<?php echo site_url('welcome/viewMyleave'); ?>">My Leaves</a></li>
                                     <!--<li><a href="#">Page 1-3</a></li>--> 
                                 </ul>
                             </li>
@@ -185,11 +185,29 @@
 //            $scope.people = result[];
 //              alert(result);
 
-
         });
 
 
     });
+//    $("#btn_applyleave").click(function () {
+//
+//        $.ajax({
+//            type: 'POST',
+//            url: "sendmail",
+//            data: {},
+//            success: function (data) {
+//                alert("Leave applied and mail has been sent to admin");
+//            }
+//
+//
+//
+//        });
+//
+//
+//    });
+
+
+
 
 
 
@@ -240,12 +258,12 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 
 <script>
-    
+
     $(function () {
 
 
-        $("#datepickerfrom").datepicker({dateFormat:'yy-mm-dd',minDate:0});
-        $("#datepickerto").datepicker({dateFormat:'yy-mm-dd',minDate:0});
+        $("#datepickerfrom").datepicker({dateFormat: 'yy-mm-dd', minDate: 0});
+        $("#datepickerto").datepicker({dateFormat: 'yy-mm-dd', minDate: 0});
 
 
     });
