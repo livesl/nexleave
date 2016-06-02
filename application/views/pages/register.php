@@ -24,7 +24,7 @@
 
             </div>
 
-           
+
 
             <div class="col-sm-6 " >
                 <nav class="navbar navbar-inverse">
@@ -40,7 +40,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="<?php echo site_url('welcome/applyleave'); ?>">Apply Leave</a></li>
                                     <li><a href="<?php echo site_url('welcome/register'); ?>">Register</a></li>
-                                      <li><a href="<?php echo site_url('welcome/viewMyleave'); ?>">My Leaves</a></li>
+                                    <li><a href="<?php echo site_url('welcome/viewMyleave'); ?>">My Leaves</a></li>
                                     <!--<li><a href="#">Page 1-3</a></li>--> 
                                 </ul>
                             </li>
@@ -77,9 +77,9 @@
 <div class="jumbotron" id="register">
     <div class="container ">
         <div class="row">
-             <div class="credits text-center">
-                 <h3>
-                     Register for New User
+            <div class="credits text-center">
+                <h3>
+                    Register for New User
                 </h3>
 
             </div>
@@ -91,7 +91,7 @@
             <div class="col-sm-4 " >
 
 
-                <?php echo form_open('register_ctrl'); ?>
+                <?php echo form_open_multipart('register_ctrl'); ?>
 
 
                 <div class="form-group">
@@ -119,6 +119,46 @@
                     <input type="password" class="form-control" placeholder="Confirm Password" id="passmatch" name="passmatch"  />
                     <?php echo form_error('passmatch'); ?>
                 </div>
+                <div class="form-group">
+                    <label for="nic">NIC/PP:</label> 
+                    <input type="text" class="form-control" placeholder="Enter NIC/PP" id="nic" name="nic"  />
+                    <?php echo form_error('nic'); ?>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">DOB:</label> 
+                    <input type="text" class="form-control" placeholder="Enter DOB(yyyy-mm-dd)" id="dob" name="dob"  />
+                    <?php echo form_error('dob'); ?>
+                </div>
+
+                <div class="form-group">
+                    <label for="eduqlf">Education Qualification:</label> 
+                    <input type="text" class="form-control" placeholder="Enter Edu/Qualification" id="eduqlf" name="eduqlf"  />
+                    <?php echo form_error('eduqlf'); ?>
+                </div>
+
+                <div class="form-group">
+                    <label for="proqlf">Professional Qualification:</label> 
+                    <input type="text" class="form-control" placeholder="Enter Pro/Qualification" id="proqlf" name="proqlf"  />
+                    <?php echo form_error('proqlf'); ?>
+                </div>
+
+                <div class="form-group">
+                    <label for="basic_salory">Basic Salory:</label> 
+                    <input type="text" class="form-control" placeholder="Enter Basic Salory" id="basic_salory" name="basic_salory"  />
+                    <?php echo form_error('basic_salory'); ?>
+                </div>
+
+                <div class="form-group">
+                    <label for="imageuser">Image:</label> 
+                    <input type="file" class="file" id="imageuser" name="imageuser" >
+                
+                    <?php if (isset($errormsg)) { ?> 
+                        <h6 style="color:red;">Invalid file type!</h6><br>
+
+                    <?php } ?>
+                </div>
+
 
                 <button type="submit" class="btn btn-primary">Register</button>
                 <?php if (isset($message)) { ?> 
