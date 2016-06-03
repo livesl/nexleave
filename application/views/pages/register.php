@@ -90,8 +90,8 @@
 
             <div class="col-sm-4 " >
 
-
-                <?php echo form_open_multipart('register_ctrl'); ?>
+                <!--
+                -->                <?php echo form_open('register_ctrl'); ?>
 
 
                 <div class="form-group">
@@ -149,16 +149,17 @@
                     <?php echo form_error('basic_salory'); ?>
                 </div>
 
-                <div class="form-group">
+                 <div class="form-group">
                     <label for="imageuser">Image:</label> 
                     <input type="file" class="file" id="imageuser" name="imageuser" >
-                
-                    <?php if (isset($errormsg)) { ?> 
-                        <h6 style="color:red;">Invalid file type!</h6><br>
+                    <!--<input type="submit" value="upload" id="uploadsubmit" name="uploadsubmit" />-->
 
-                    <?php } ?>
+
                 </div>
 
+
+
+                <!--/////////////////////////////////////////////////////////////////////////////////-->
 
                 <button type="submit" class="btn btn-primary">Register</button>
                 <?php if (isset($message)) { ?> 
@@ -166,15 +167,13 @@
 
                 <?php } ?>
 
-                <?php form_close() ?>
+               
+
+               
+               
 
 
-
-
-
-
-
-
+             
 
 
             </div>
@@ -182,7 +181,7 @@
             <div  class="col-sm-4 "></div>
         </div>
     </div>
-</div>
+</div><!--
 
 <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="//code.angularjs.org/1.2.20/angular.js"></script>
